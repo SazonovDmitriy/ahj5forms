@@ -1,0 +1,87 @@
+.container {
+    margin: 10% auto;
+    width: 250px;
+    position: relative;
+}
+
+.btn {
+    padding: 10px;
+    background-color: #DC3545;
+    color:#fff;
+    border-radius: 10%;
+    border: 1px solid #DC3545;
+}
+
+.btn:hover {
+    background-color: blue;
+    color:#fff;
+    cursor: pointer;
+    border: 1px solid blue;
+}
+
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(190, 91, 10, 0.5);
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    position: absolute;
+    top: -290%;
+    left: -33%;
+    border: 1px solid #00000033;
+    border-radius: 4px;
+    width: 275px;
+}
+  
+.arrow {
+    position: absolute;
+    bottom: -9px;
+    box-sizing: border-box;
+    color: #e6e6e6c5;
+    height: 8px;
+    left: 124px;
+    margin: 0 5px;
+    width: 16px;
+}
+  
+.arrow::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    height: 8px;
+    width: 16px;
+}
+  
+.arrow::after {
+    content: "";
+    position: absolute;
+    border-bottom: 0 solid #00000000;
+    border-left: 8px solid #00000000;
+    border-right: 8px solid #00000000;
+    border-top: 8px solid #ffffff;
+    bottom: 1px;
+    box-sizing: border-box;
+    height: 8px;
+    width: 16px;
+}
+  
+.popover-head {
+    margin: 0;
+    color: rgb(33, 37, 41);
+    background-color: #fff;
+    border-bottom: 1px solid #31272728;
+    padding: 8px 12px;
+    box-sizing: border-box;
+}
+  
+.popover-body {
+    color: rgb(33, 37, 41);
+    background-color: #fff;
+    line-height: 21px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+  }
