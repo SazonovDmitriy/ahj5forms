@@ -1,14 +1,24 @@
 const btn = document.querySelector('[data-toggle="popover"]');
 const popover = document.querySelector('[data-widget="popover-top"]');
+const popoverAdd = document.createElement('div');
 
 btn.addEventListener('click', (e) => {
     e.preventDefault();
-
-    if (popover.classList.contains('hidden')) {
-        popover.classList.remove('hidden');
-        popover.classList.add('active');
-    } else {
-        popover.classList.remove('active');
-        popover.classList.add('hidden');
-    }
+    const isValid = e.currentTarget.checkValidity();
+        popoverAdd.innerHTML = `<div class="arrow"></div>
+                                    <h3 class="popover-head">Popover title</h3>
+                                <div class="popover-body">And here's some amazing content. It's very engaging. Right?</div>`;
+        popover.classList.toggle('hidden')
+        popover.classList.toggle('active')
+        popover.insertAdjacentElement("afterbegin", popoverAdd);
 });
+
+// function positionEl (elem) {
+//     elem.style.position = 'absolute';
+// }
+// Проверить на валидность
+// Если валидно, добавлять innerHTML
+
+// popoverAdd.innerHTML = `<div class="arrow"></div>
+//                                         <h3 class="popover-head">Popover title</h3>
+//                                     <div class="popover-body">And here's some amazing content. It's very engaging. Right?</div>`;
