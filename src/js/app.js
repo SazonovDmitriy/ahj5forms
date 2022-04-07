@@ -12,13 +12,3 @@ btn.addEventListener('click', (e) => {
         popover.classList.toggle('active')
         popover.insertAdjacentElement("afterbegin", popoverAdd);
 });
-
-// function positionEl (elem) {
-//     elem.style.position = 'absolute';
-// }
-// Проверить на валидность
-// Если валидно, добавлять innerHTML
-
-// popoverAdd.innerHTML = `<div class="arrow"></div>
-//                                         <h3 class="popover-head">Popover title</h3>
-//                                     <div class="popover-body">And here's some amazing content. It's very engaging. Right?</div>`;
